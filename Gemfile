@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0.beta1'
 
 # Use sqlite3 as the database for Active Record
+
 # gem 'sqlite3'
 
 # Use SCSS for stylesheets
@@ -35,6 +36,10 @@ gem 'sdoc',          group: :doc, require: false
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/jonleighton/spring
 gem 'spring',        group: :development
 
+gem 'rails_12factor', group: :production
+
+gem 'pg'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -47,3 +52,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+ruby "2.0.0"
