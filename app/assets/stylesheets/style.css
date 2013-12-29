@@ -1,0 +1,6 @@
+body {
+  background-image: url("/assets/background.jpg");
+  background-size: 100%;
+  position: fixed;
+  color: lightblue;
+}
