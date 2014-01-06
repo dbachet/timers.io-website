@@ -1,3 +1,69 @@
-body { background-image: image_url("background.jpg") }
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  background-image: image_url("background.jpg");
+  background-position:center;
+}
+
 .app_store_link { width: 100px }
+
 .screenshot { width: 200px }
+
+.contact { background: rgba(255, 255, 255, 0.7) }
+
+.promotion {
+  font-style: italic;
+  color: black;
+}
+
+header {
+  background: rgba(46, 46, 46, 0.3);
+  margin-bottom: 20px;
+  .lead small {
+    font-weight: 100;
+    color: rgb(230, 230, 230);
+  }
+  h1 {
+    font-weight: 100;
+    font-size: 76px;
+    a{
+      color: white;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer {
+  background: rgba(46, 46, 46, 0.3);
+  .copyright {
+    color: white;
+    font-weight: 100;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li.circle-footer {
+      background-color: white;
+      @include rounded(50%);
+
+      display: inline-block;
+      height:35px;
+      width: 35px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 35px;
+      margin-right: 10px;
+      font-size: 15px;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}
