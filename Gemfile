@@ -10,7 +10,9 @@ gem 'rails', '4.1.0.beta1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
-gem "twitter-bootstrap-rails"
+
+gem 'bootstrap-sass-rails'
+gem "font-awesome-rails"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
